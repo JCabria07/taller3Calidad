@@ -54,11 +54,12 @@ test("potenciaDebeDarResultadoCorrecto", () => {
   expect(calculator.potencia(9, 2)).toBeCloseTo(81.0, 4);
 });
 
-test("raizCuadradaDebeDarResultadoCorrecto", () => {
-  expect(calculator.raizCuadrada(9)).toBeCloseTo(3.0, 4);
-  expect(calculator.raizCuadrada(25)).toBeCloseTo(5.0, 4);
-  expect(calculator.raizCuadrada(100)).toBeCloseTo(10.0, 4);
+test("raizCuadradaDebeDarResultadoCorrecto", () => { // Incorectos LOS 3.
+  expect(calculator.raizCuadrada(9)).toBeCloseTo(4.0, 4);   
+  expect(calculator.raizCuadrada(25)).toBeCloseTo(6.0, 4);  
+  expect(calculator.raizCuadrada(100)).toBeCloseTo(11.0, 4); 
 });
+
 
 test("raizCuadradaDeNumeroNegativoDebeLanzarExcepcion", () => {
   expect(() => calculator.raizCuadrada(-9)).toThrow("No se puede calcular raíz cuadrada de un número negativo");

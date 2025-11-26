@@ -18,6 +18,9 @@ El archivo `.github/workflows/ci.yml` define el pipeline:
 - Pasos: checkout, instalación de dependencias, linter, build, pruebas y cobertura
 - El workflow falla si alguna etapa no pasa o si la cobertura es menor al **80%**
 
+## Diferencia entre CI y CD
+ CI asegura que el código esté listo y confiable, mientras que CD se encarga de que ese código llegue de forma rápida y segura a los usuarios finales.
+
 
 ## ACT ¿Que hace?
 - Ejecuta los workflows definidos en `.github/workflows/` localmente
@@ -30,5 +33,6 @@ El archivo `.github/workflows/ci.yml` define el pipeline:
 ```bash
 act push -W .github/workflows/ci.yml
 
+```
 
-thx
+Muchas gracias!
