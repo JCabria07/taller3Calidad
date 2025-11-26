@@ -4,7 +4,7 @@
   "description": "Proyecto de calidad de software con CI/CD",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src --ext .ts",
+    "lint": "npx --no-install eslint src --ext .ts",
     "build": "tsc",
     "test": "jest",
     "test:coverage": "jest --coverage",

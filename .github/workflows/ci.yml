@@ -17,7 +17,10 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+        env:
+          NPM_CONFIG_PRODUCTION: false
+          NODE_ENV: development
 
       - name: Run Linter
         run: npm run lint
