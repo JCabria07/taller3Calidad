@@ -9,5 +9,9 @@ module.exports = {
       lines: 80,
       statements: 80
     }
-  }
+  },
+  testPathIgnorePatterns: [
+    "/node_modules/",
+    "/dist/"
+  ]
 };
